@@ -19,3 +19,16 @@ const zeroOrLess1 = (num) => {
 };
 
 console.log(zeroOrLess1(5));
+
+// third way
+
+const zeroOrLess2 = (num) => {
+  if (num * 1 == 0 || Math.sign(num) === -1) {
+    result = true;
+  } else {
+    result = false;
+  }
+  return result;
+};
+
+console.log(zeroOrLess2(-5));
